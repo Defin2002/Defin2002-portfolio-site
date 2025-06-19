@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Defin Portfolio Website</title>
+  <link rel="icon" href="image/logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/02c8adf231.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="image/logo.png" class="logo" alt="Logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-regular fa-x" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Full Stack Developer</p>
+        <h1>Hi, I’m <span>Defin D Franklin</span><br />From India</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="image/Aboutme.jpeg" alt="About Me" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-titles">About Me</h1>
+          <p>
+            I am Defin D Franklin, a B.Tech graduate in Computer Science and Engineering.
+            I completed my degree at B. S. Abdur Rahman Crescent Institute of Science and Technology, Chennai, Tamil Nadu.
+            I am passionate about technology, programming, and creating innovative solutions.
+            I have a keen interest in web development, full-stack technologies, and modern software frameworks.
+          </p>
+          <div class="tab-titles">
+            <span class="tab-links active-link" onclick="openTab('skills', this)">Skills</span>
+            <span class="tab-links" onclick="openTab('certificate', this)">Certificate</span>
+            <span class="tab-links" onclick="openTab('education', this)">Education</span>
+          </div>
+          <div class="tab-contents">
+            <div class="tab-content active-content" id="skills">
+              <ul>
+                <li><span>Frontend Development:</span> HTML, CSS, JavaScript, React</li>
+                <li><span>Backend Development:</span> Node.js, Express, MongoDB</li>
+                <li><span>Full Stack Project Development:</span> Building complete web apps</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="certificate">
+              <ul>
+                <li><span>NPTEL:</span> Social Innovation in Industry 4.0 (Jul–Oct 2024)</li>
+                <li><span>CodeTantra:</span> Internship (Jun–Jul 2024)</li>
+                <li><span>Coursera:</span> Full-Stack Web Development with React (May 2024)</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="education">
+              <ul>
+                <li><span>B.Tech (CSE):</span> BSA Crescent IST, Chennai (Graduated 2025)</li>
+                <li><span>Diploma (CSE):</span> SRM Polytechnic College (2021)</li>
+                <li><span>12th (CBSE):</span> New Jyothi Central School (2020)</li>
+                <li><span>10th (ICSE):</span> SBJ Vidya Bhavan International School (2018)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section class="service" id="service">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-container">
+      <div class="service-card">
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Development</h2>
+        <p>I build responsive, fast, and modern websites with great user experience.</p>
+        <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-paint-brush"></i>
+        <h2>UI/UX Design</h2>
+        <p>Designing intuitive and attractive interfaces that delight users.</p>
+        <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <h2>App Development</h2>
+        <p>Building cross-platform mobile apps with seamless performance.</p>
+        <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-titles">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="image/work-1.png" class="work-image" alt="Social Media Work" />
+          <div class="Layer">
+            <h3>Social Media</h3>
+            <p>We help you build a powerful social media presence that engages your audience and grows your brand.</p>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="image/work-3.png" class="work-image" alt="Music App" />
+          <div class="Layer">
+            <h3>Music App</h3>
+            <p>We design intuitive and engaging music apps that deliver seamless listening experiences anytime, anywhere.</p>
+            <a href="https://accounts.spotify.com/en/login" target="_blank"><i class="fa-solid fa-music"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="image/work-4.png" class="work-image" alt="Online Shopping" />
+          <div class="Layer">
+            <h3>Online Shopping</h3>
+            <p>We create user-friendly online shopping platforms that offer a smooth, secure, and enjoyable shopping experience.</p>
+            <a href="https://www.amazon.in/" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact" id="contact">
+    <div class="container">
+      <div class="row contact-container">
+        <div class="contact-left">
+          <h1 class="sub-titles">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i> definfranklin2002@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> 9677447366</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/definfranklin2002/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Defin2002" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.youtube.com/@Pes.world.7" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <a href="image/Defin.zip" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>Copyright © 2025 Defin’s Portfolio Website. <i class="fa-solid fa-heart"></i> All Rights Reserved</p>
+  </div>
+
+  <script>
+    function openTab(tabName, element) {
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-content");
+
+      for (var i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove("active-link");
+      }
+      for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove("active-content");
+      }
+
+      element.classList.add("active-link");
+      document.getElementById(tabName).classList.add("active-content");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+
+    const form = document.forms["submit-to-google-sheet"];
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxIz60oNSkIsZ02zcQ7QZe62_yTneBoTKA1MEQIOQGDW8dB7C_gun1agyz0mvTbWfK5/exec';
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(() => {
+          alert("Message sent successfully!");
+          form.reset();
+        })
+        .catch(() => {
+          alert("Something went wrong!");
+        });
+    });
+  </script>
+</body>
+</html>
